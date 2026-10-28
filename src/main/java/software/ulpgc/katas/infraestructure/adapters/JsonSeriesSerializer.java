@@ -5,7 +5,7 @@ import software.ulpgc.katas.application.ports.SeriesSerializer;
 
 public class JsonSeriesSerializer implements SeriesSerializer {
     @Override
-    public String serializer(int[] series) {
+    public String serialize(int[] series) {
         return new Gson().toJson(series);
     }
 }
